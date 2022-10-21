@@ -30,7 +30,7 @@
       };
     },
     async mounted() {
-      const response = await axios.get("http://localhost:5000/");
+      const response = await axios.get("http://165.227.130.18:5000/");
       this.hakem = response.data;
       console.log(response.data)
     },
@@ -72,6 +72,7 @@
   padding-top: 100px;
   font-size: 30px;
 }
+
 
 @import'~bootstrap/dist/css/bootstrap.css'
 </style>
