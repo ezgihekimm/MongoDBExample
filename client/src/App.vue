@@ -3,8 +3,8 @@
 
   <div class="input-group">
     <span class="input-group-text">First and last name</span>
-    <input v-model="name" type="text" aria-label="First name" class="form-control">
-    <button type="button" @click="search(name)" class="btn btn-dark">Search</button>
+    <input v-model="name" @keyup.enter="search(name)" type="text" aria-label="First name" class="form-control">
+    <button type="button"  @click="search(name)" class="btn btn-dark">Search</button>
   </div>
 
   <div class="info">
